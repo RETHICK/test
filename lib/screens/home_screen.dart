@@ -442,7 +442,7 @@ class _HomeTab extends StatelessWidget {
                       icon: Icons.search,
                       color: theme.colorScheme.secondary,
                       onTap: () {
-                        DefaultTabController.of(context)?.animateTo(1);
+                        _navigateToTab(1);
                       },
                     ),
                   ),
