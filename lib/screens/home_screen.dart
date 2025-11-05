@@ -429,7 +429,7 @@ class _HomeTab extends StatelessWidget {
                           _showNotConnectedMessage(context);
                         } else {
                           // Navigate to transfer screen
-                          DefaultTabController.of(context)?.animateTo(2);
+                          _navigateToTab(2);
                         }
                       },
                     ),
