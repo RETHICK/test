@@ -149,7 +149,7 @@ class _TransferScreenState extends State<TransferScreen>
             ElevatedButton.icon(
               onPressed: () {
                 // Switch to devices tab
-                DefaultTabController.of(context)?.animateTo(1);
+                _navigateToMainTab(1);
               },
               icon: const Icon(Icons.devices),
               label: const Text('Find Devices'),
