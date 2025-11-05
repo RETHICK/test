@@ -634,4 +634,11 @@ class _TransferScreenState extends State<TransferScreen>
       );
     }
   }
+
+  void _navigateToMainTab(int index) {
+    // Navigate to main home screen tab
+    Navigator.popUntil(context, (route) => route.isFirst);
+    // This would need to be handled by the parent widget
+    // For now, just pop to the home screen
+  }
 }
