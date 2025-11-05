@@ -384,6 +384,17 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  void _navigateToTab(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+    _pageController.animateToPage(
+      index,
+      duration: AppConstants.mediumAnimation,
+      curve: Curves.easeInOut,
+    );
+  }
+
   void _showSettings() {
     showModalBottomSheet(
       context: context,
